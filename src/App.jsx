@@ -8,6 +8,7 @@ import FetchingUser from "./components/ConnectWithBackend/FetchingUser";
 import UseEffectCleanUp from "./components/ConnectWithBackend/UseEffectCleanUp";
 import CancellingRequest from "./components/ConnectWithBackend/CancellingRequest";
 import UseApiService from "./components/ConnectWithBackend/UseApiService";
+import UseUserService from "./components/ConnectWithBackend/UseUserService";
 
 // function App() {
 //   const [costs, setCosts] = useState([]);
@@ -55,7 +56,7 @@ import UseApiService from "./components/ConnectWithBackend/UseApiService";
 function App() {
   return (
     <div>
-      <UseApiService />
+      <UseUserService />
     </div>
   );
 }
