@@ -7,6 +7,7 @@ import axios from "axios";
 import FetchingUser from "./components/ConnectWithBackend/FetchingUser";
 import UseEffectCleanUp from "./components/ConnectWithBackend/UseEffectCleanUp";
 import CancellingRequest from "./components/ConnectWithBackend/CancellingRequest";
+import UseApiService from "./components/ConnectWithBackend/UseApiService";
 
 // function App() {
 //   const [costs, setCosts] = useState([]);
@@ -54,7 +55,7 @@ import CancellingRequest from "./components/ConnectWithBackend/CancellingRequest
 function App() {
   return (
     <div>
-      <CancellingRequest />
+      <UseApiService />
     </div>
   );
 }
