@@ -53,7 +53,7 @@ import UseEffectCleanUp from "./components/ConnectWithBackend/UseEffectCleanUp";
 function App() {
   return (
     <div>
-      <UseEffectCleanUp />
+      <FetchingUser />
     </div>
   );
 }
