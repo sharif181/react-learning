@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import userService from "../../services/user-service";
+import create from "../../services/user-service";
 import { CanceledError } from "../../services/api-client";
 
 const UseUserService = () => {
@@ -8,7 +8,8 @@ const UseUserService = () => {
   const [loading, setLoading] = useState(false);
   useEffect(() => {
     setLoading(true);
-    const { request, cancel } = userService.getAllUser();
+    const userService = create("/users");
+    const { request, cancel } = userService.getAll();
     request
       .then((res) => {
         setUser(res.data);

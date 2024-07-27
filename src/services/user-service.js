@@ -1,13 +1,13 @@
-import apiClient from "./api-client";
-
-class UserService {
-  getAllUser() {
-    const controller = new AbortController();
-    const request = apiClient.get("/users", {
-      signal: controller.signal,
-    });
-    return { request, cancel: () => controller.abort() };
+import HttpService from "./http-services";
+class UserService extends HttpService {
+  constructor(endpoint) {
+    super(endpoint);
+  }
+  getById(id) {
+    console.log("own method ", id);
   }
 }
 
-export default new UserService();
+const create = (endpoint) => new UserService(endpoint);
+
+export default create;
