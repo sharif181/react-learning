@@ -6,6 +6,7 @@ import LeanringUseEffect from "./components/ConnectWithBackend/LeanringUseEffect
 import axios from "axios";
 import FetchingUser from "./components/ConnectWithBackend/FetchingUser";
 import UseEffectCleanUp from "./components/ConnectWithBackend/UseEffectCleanUp";
+import CancellingRequest from "./components/ConnectWithBackend/CancellingRequest";
 
 // function App() {
 //   const [costs, setCosts] = useState([]);
@@ -53,7 +54,7 @@ import UseEffectCleanUp from "./components/ConnectWithBackend/UseEffectCleanUp";
 function App() {
   return (
     <div>
-      <FetchingUser />
+      <CancellingRequest />
     </div>
   );
 }
